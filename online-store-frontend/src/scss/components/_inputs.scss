@@ -1,0 +1,102 @@
+.item-input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    width: 195px;
+}
+
+.order-input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.pizza-option-input {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    width: 190px;
+}
+
+
+.item-edit-input {
+    border: none;
+}
+
+.item-textarea {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.item-edit-textarea {
+    text-align: center;
+    border: none;
+}
+
+.input-price {
+    max-width: 60px;
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-size {
+    max-width: 80px;
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-size-edit {
+    width: 60px;
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-price-edit {
+    width: 35px;
+    margin-right: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.input-name {
+    width: 250px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 5px;
+}
+
+.textarea-name {
+    width: 255px;
+    height: 60px;
+    resize: none;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+}
+
+.textarea-description {
+    width: 260px;
+    height: 100px;
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+.login-field {
+    margin-bottom: 10px;
+}
