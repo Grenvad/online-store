@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\klime\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\klime\\.nuget\\packages"
+    ]
+  }
+}

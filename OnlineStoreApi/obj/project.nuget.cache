@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "Yf5jXVE0WqhY/+eV3pVc+4L7hv+Yv3JiRP6ejg4GP2vOZQRQTySSEjX0OAyaeQHx1Uu+Y5LFT1vslzH3BLvxzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\klime\\OneDrive\\Documents\\Projects\\online-store\\OnlineStoreApi\\OnlineStoreApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\klime\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\klime\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\klime\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\klime\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\klime\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\klime\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
