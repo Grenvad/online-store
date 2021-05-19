@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\klime\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\klime\\.nuget\\packages"
+      "C:\\Users\\matve\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\matve\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
 }
