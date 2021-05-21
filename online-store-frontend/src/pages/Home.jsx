@@ -4,30 +4,32 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Categories, ProductBlock, LoadingBlock } from "../components";
 
-import { setCategory, setSortBy } from "../redux/actions/filters";
+import {
+  fetchCategories,
+  setActiveCategory,
+} from "../redux/actions/categories";
 import { fetchProducts } from "../redux/actions/products";
 import { addItemToCart } from "../redux/actions/cart";
-
-const categoryNames = [
-  { name: "Электроника", apiname: "electronics" },
-  { name: "Бижутерия", apiname: "jewelery" },
-  { name: "Мужская одежда", apiname: "men's clothing" },
-  { name: "Женская одежда", apiname: "women's clothing" },
-];
 
 function Home() {
   const dispatch = useDispatch();
   const items = useSelector(({ products }) => products.items);
   const cartItems = useSelector(({ cart }) => cart.items);
   const isLoaded = useSelector(({ products }) => products.isLoaded);
-  const { category, sortBy } = useSelector(({ filters }) => filters);
+  const { categories, activeCategory } = useSelector(
+    ({ categories }) => categories
+  );
 
   React.useEffect(() => {
-    dispatch(fetchProducts(sortBy, category));
-  }, [category, sortBy]);
+    dispatch(fetchCategories());
+  }, [dispatch]);
 
-  const onSelectCategory = React.useCallback((index) => {
-    dispatch(setCategory(index));
+  React.useEffect(() => {
+    dispatch(fetchProducts(activeCategory));
+  }, [activeCategory]);
+
+  const onSelectCategory = React.useCallback((id) => {
+    dispatch(setActiveCategory(id));
   }, []);
 
   const handleAddItemToCart = (item) => {
@@ -38,9 +40,9 @@ function Home() {
     <div className="container">
       <div className="content__top">
         <Categories
-          activeCategory={category}
+          activeCategory={activeCategory}
           onClickCategory={onSelectCategory}
-          items={categoryNames}
+          items={categories}
         />
       </div>
       <div className="content__items">

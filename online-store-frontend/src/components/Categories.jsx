@@ -7,8 +7,8 @@ function Categories({ activeCategory, items, onClickCategory }) {
         {items &&
           items.map((item, index) => (
             <li
-              className={activeCategory === item.apiname ? "active" : ""}
-              onClick={() => onClickCategory(item.apiname)}
+              className={activeCategory === item.id ? "active" : ""}
+              onClick={() => onClickCategory(item.id)}
               key={`${item}_${index}`}
             >
               {item.name}

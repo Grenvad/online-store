@@ -5,14 +5,14 @@ export const setLoaded = (payload) => ({
   payload,
 });
 
-export const fetchProducts = (sortBy, category) => (dispatch) => {
+export const fetchProducts = (category) => (dispatch) => {
   dispatch({
     type: 'SET_LOADED',
     payload: false,
   });
 
   axios
-    .get(`https://fakestoreapi.com/products/category/${category}`)
+    .get(`https://localhost:44364/api/Products?categoryId=${category}`)
     .then(({ data }) => {
       dispatch(setProducts(data));
     });

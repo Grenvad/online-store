@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
-//import { makeOrder } from "../redux/actions/products";
+import { makeOrder } from "../redux/actions/cart";
 import { ReactComponent as LeftArrowIcon } from "../assets/img/grey-arrow-left.svg";
 import orderImage from "../assets/img/order.jpg";
 
@@ -14,15 +14,26 @@ function Checkout() {
   const [isOrdered, setOrdered] = React.useState(false);
 
   const order = () => {
-    var orderdata = {
+    var orderItems = [];
+    for (var i in items) {
+      orderItems = [
+        ...orderItems,
+        { itemId: i, amount: items[i].items.length },
+      ];
+    }
+    var data = {
       address: address,
-      phoneNumber: phoneNumber,
-      cashPayment: true,
-      OrderSum: totalPrice,
-      OrderDate: new Date(),
+      clientPhoneNumber: phoneNumber,
+      isCashPayment: true,
+      totalPrice: totalPrice,
+      items: orderItems,
     };
-    // dispatch(makeOrder(orderdata, items))
+    console.log(data);
+    makeOrder(data);
     setOrdered(true);
+    dispatch({
+      type: "CLEAR_CART",
+    });
   };
 
   return (
