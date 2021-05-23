@@ -70,3 +70,17 @@ D:\projects\online-store\OnlineStoreApi\obj\Debug\net5.0\OnlineStoreApi.dll
 D:\projects\online-store\OnlineStoreApi\obj\Debug\net5.0\ref\OnlineStoreApi.dll
 D:\projects\online-store\OnlineStoreApi\obj\Debug\net5.0\OnlineStoreApi.pdb
 D:\projects\online-store\OnlineStoreApi\obj\Debug\net5.0\OnlineStoreApi.genruntimeconfig.cache
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\DnsClient.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MediatR.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\klime\OneDrive\Documents\Projects\online-store\OnlineStoreApi\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll

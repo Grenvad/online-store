@@ -29,6 +29,17 @@ namespace OnlineStoreApi.Controllers
             return BadRequest("не найдено");
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProduct(string id)
+        {
+            var result = await _mediator.Send(new GetProductById.Query(id));
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            return BadRequest("Что-то пошло не так");
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddProduct([FromBody] Product product)
         {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/Pencil.svg";
+import logo from "../assets/img/1.svg";
 import { ReactComponent as CartLogo } from "../assets/img/cart.svg";
 import { useSelector } from "react-redux";
 
@@ -14,10 +14,10 @@ function Header() {
       <div className="container">
         <Link to="/">
           <div className="header__logo">
-            <img width="38" src={logo} alt="Pizza logo" />
+            <img width="38" src={logo} alt="Logo" />
             <div>
-              <h1>E-PENCIL</h1>
-              <p>самые острые карандаши</p>
+              <h1>GRENVAD</h1>
+              <p>Мир хороших покупок</p>
             </div>
           </div>
         </Link>
