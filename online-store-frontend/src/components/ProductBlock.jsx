@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-import { ReactComponent as PlusIcon } from "../assets/img/plus.svg";
 
 function ProductBlock({ id, name, description, imageUrl, onClickAdd, price }) {
   const onAddItem = () => {
@@ -21,10 +20,14 @@ function ProductBlock({ id, name, description, imageUrl, onClickAdd, price }) {
       <div className="item-block__bottom">
         <div className="item-block__price">{price} р.</div>
         <Button onClick={onAddItem} className="button--add" outline>
-          <PlusIcon />
-          <span>в корзину</span>
+          <span>В корзину</span>
         </Button>
       </div>
+
+      <div className="border-top-left"></div>
+      <div className="border-bottom-right"></div>
+      <div className="border-bottom-left"></div>
+      <div className="border-top-right"></div>
     </div>
   );
 }
