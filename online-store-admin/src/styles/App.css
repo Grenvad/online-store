@@ -1,0 +1,62 @@
+/*---------- Font-awesome ----------*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+body {
+    background-color: #252525 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+}
+.wrap main {
+    width: 82%;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+.button {
+    border: 2px solid #d31e24;
+    border-radius: 4px;
+    padding: 10px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+}
+.links {
+    display: flex;
+    align-items: center;
+}
+.links a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.links i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.icon_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.addComponent {
+    color: #fff;
+    font-size: 40px;
+}

@@ -1,0 +1,22 @@
+.categories {
+    width: 100%;
+    margin: 40px 0 60px 0;
+}
+.categories ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.categories ul li {
+    padding: 20px 0;
+    font-size: 20px;
+    flex-grow: 1;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active {
+    color: #D31E24;
+    border-bottom: 2px solid #D31E24 !important;
+}
