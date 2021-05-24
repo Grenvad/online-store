@@ -13,12 +13,19 @@ const Product = () => {
     }, [id]);
 
     return (
-        <>
+        <div className="container">
             {
                 product !== null ?
-                    <div><h2>{product.name}</h2></div> : <span>Загрузка</span>
+                    <div className="product_item">
+                        <img src={product.image} alt="картинка" />
+                        <div className="product_item_descr">
+                            <h2>{product.name}</h2>
+                            <p>{product.description}</p>
+                            <span>Цена: {product.price}</span>
+                        </div>
+                    </div> : <span>Загрузка</span>
             }
-        </>
+        </div>
     );
 }
 
