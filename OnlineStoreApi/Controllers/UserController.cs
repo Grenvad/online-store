@@ -79,7 +79,7 @@ namespace OnlineStoreApi.Controllers
             return BadRequest(result.Message);
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPost("register")]
         public async Task<ActionResult> RegisterAsync(UserRegisterModel model)
         {

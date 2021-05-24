@@ -39,8 +39,8 @@ namespace OnlineStoreApi.Core.Services.OrderService.Queries
             public async Task<IEnumerable<OrderViewModel>> Handle(Query request, CancellationToken cancellationToken)
             {
                 var orders = _orderCollection.AsQueryable().ToList();
-                return orders.Select(i => new OrderViewModel
-                {
+                orders.Select(i => new OrderViewModel 
+                { 
                     Id = i.Id,
                     Address = i.Address,
                     ClientPhoneNumber = i.ClientPhoneNumber,
@@ -49,10 +49,10 @@ namespace OnlineStoreApi.Core.Services.OrderService.Queries
                     TotalPrice = i.TotalPrice,
                     Items = i.Items.Select(item => new OrderItemViewModel
                     {
-                        Item = _productCollection.Find(p => p.Id == item.ItemId).FirstOrDefault(),
-                        Amount = item.Amount
+                        Item = _productCollection.AsQueryable().Where(p => p.Id == item.ItemId).FirstOrDefault(),
+                        Amount = i.Amount
                     }).ToArray()
-                }).ToList();
+            }).ToList();
             }
         }
     }
