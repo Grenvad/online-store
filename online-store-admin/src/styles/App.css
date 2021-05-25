@@ -2,7 +2,9 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 body {
-    background-color: #252525 !important;
+    background-color: #ffffff !important;
+    color: black !important;
+    overflow-x: hidden;
 }
 
 * {
@@ -22,16 +24,16 @@ ul {
     height: 100vh;
 }
 .wrap main {
-    width: 82%;
+    width: 100%;
     padding: 20px 50px;
-    color: #fff;
+    color: #000;
 }
 
 .button {
-    border: 2px solid #d31e24;
+    border: 2px solid #15b680;
     border-radius: 4px;
     padding: 10px 40px;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     background: transparent;
     cursor: pointer;
@@ -41,12 +43,12 @@ ul {
     align-items: center;
 }
 .links a{
-    color: #fff;
+    color: #000;
     font-size: 20px;
     margin-left: 10px;
 }
 .links i {
-    color: #fff;
+    color: #000;
     font-size: 20px;
     margin-left: 10px;
     cursor: pointer;
@@ -57,6 +59,6 @@ ul {
     justify-content: flex-end;
 }
 .addComponent {
-    color: #fff;
+    color: #000;
     font-size: 40px;
 }

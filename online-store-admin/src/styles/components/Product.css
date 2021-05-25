@@ -1,0 +1,20 @@
+.product_item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+.product_item img {
+    width: 100%;
+}
+.product_item p {
+    font-size: 18px;
+}
+.product_item span {
+    font-size: 16px;
+}
+.product_item i {
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}

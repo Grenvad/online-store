@@ -9,13 +9,13 @@ function Order({
   orderItems,
 }) {
   return (
-    <div>
+    <div className="order_item">
       <h3>id: {id}</h3>
-      <div>
-        <span>адрес: {address}</span>
-        <span>телефон: {phoneNumber}</span>
-        <span>доставлено: {isDelivered}</span>
-      </div>
+      <ul>
+        <li>адрес: {address}</li>
+        <li>телефон: {phoneNumber}</li>
+        <li>доставлено: {isDelivered}</li>
+      </ul>
       <div>
         {orderItems.map((item, index) => (
           <span key={index}>

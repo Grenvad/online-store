@@ -39,7 +39,7 @@ function CategoryPage() {
                                     Key={index}
                                     label={item.name}
                                     onDelete={() => dispatch(deleteCategory(item.id))}
-                                    color="secondary"
+                                    color="primary"
                                     variant="outlined"
                                 />
                             ))
@@ -58,7 +58,7 @@ function CategoryPage() {
                         }}>
                             <Form.Group controlId="setCategory">
                                 <Form.Label>Введите название категории</Form.Label>
-                                <Form.Control type="text" placeholder="Силовые" value={category} onChange={(event) => setCategory(event.target.value)} />
+                                <Form.Control type="text" placeholder="Канцелярия" value={category} onChange={(event) => setCategory(event.target.value)} />
                             </Form.Group>
                             <Button variant="primary" type="submit">
                                 Добавить

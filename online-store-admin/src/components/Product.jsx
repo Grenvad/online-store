@@ -10,11 +10,11 @@ function Product({ id, title, description, imageUrl, price }) {
     dispatch(deleteProduct(id));
   }
   return (
-    <div>
+    <div className="product_item">
       <img src={imageUrl} alt="товар" />
       <h3>{title}</h3>
       <p>{description}</p>
-      <span>{price}</span>
+      <span>Цена: {price}</span>
       <div>
         <Link to={`/product/edit/${id}`}>
           <i className="fas fa-edit"></i>

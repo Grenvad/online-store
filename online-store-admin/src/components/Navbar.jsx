@@ -6,7 +6,7 @@ function Navbar() {
         <>
             <nav className="navbar_custom">
                 <div className="title_block_custom">
-                    <h2 className="title_custom">Админ-панель</h2>
+                    <h2 className="title_custom">Панель администратора</h2>
                 </div>
                 <ul className="nav_custom">
                     <li className="nav_item_custom">

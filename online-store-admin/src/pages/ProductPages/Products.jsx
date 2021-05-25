@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../../redux/actions/products";
@@ -29,10 +30,11 @@ function Products() {
   }, [activeCategory, dispatch]);
 
   return (
-    <main>
+    <>
+      <main>
       <div className="icon_wrap">
         <Link to="/product/add">
-          <i className="fas fa-plus addComponent"></i>
+          <Button variant="primary">Добавить</Button>
         </Link>
       </div>
       <Categories
@@ -42,6 +44,7 @@ function Products() {
       />
       {products !== undefined ? <ProductContainer items={products} /> : <span>загрузка...</span>}
     </main>
+    </>
   );
 }
 
