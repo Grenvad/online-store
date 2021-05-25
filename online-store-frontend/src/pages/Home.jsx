@@ -51,7 +51,7 @@ function Home() {
               <ProductBlock
                 key={obj.id}
                 id={obj.id}
-                name={obj.title}
+                name={obj.name}
                 imageUrl={obj.image}
                 price={obj.price}
                 description={obj.description}
